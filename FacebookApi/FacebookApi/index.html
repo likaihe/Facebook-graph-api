@@ -1,26 +1,26 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<meta charset="utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
 </head>
 <body>
     <script>
   window.fbAsyncInit = function() {
     FB.init({
-        appId: '355112911504560',
+        appId: '154101805036528',
       xfbml      : true,
       version    : 'v2.8'
     });
     FB.AppEvents.logPageView();
-    FB.getLoginStatus(function (response) {
-        if (response.status === 'connected') {
-            document.getElementById('status').innerHtml = "connected.";
-        } else if (response.status === 'not authorized') {
-            document.getElementById('status').innerHTML = "not logged in"
-        }
+    //FB.getLoginStatus(function (response) {
+    //    if (response.status === 'connected') {
+    //        document.getElementById('status').innerHtml = "connected.";
+    //    } else if (response.status === 'not authorized') {
+    //        document.getElementById('status').innerHTML = "not logged in"
+    //    }
 
-    });
+    //});
     
   };
   
@@ -35,5 +35,11 @@
     </script>
 
 <div id="status"></div>
+
+    <div class="fb-like"
+         data-share="true"
+         data-width="450"
+         data-show-faces="true">
+    </div>
 </body>
 </html>
