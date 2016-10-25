@@ -60,6 +60,7 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="myFacebook fun.js" />
+    <Content Include="testConnection.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

@@ -15,7 +15,7 @@ $(document).ready(function () {
         //???
         FB.AppEvents.logPageView();
 
-        //check the connection
+        //login 
         FB.login(function (response) {
             if (response.authResponse) {
                 //get accessToken
