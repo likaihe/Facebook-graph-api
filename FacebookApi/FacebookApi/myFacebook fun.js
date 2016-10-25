@@ -14,10 +14,9 @@ $(document).ready(function () {
 
         //???
         FB.AppEvents.logPageView();
-
-        //login 
-        FB.login(function (response) {
-            if (response.authResponse) {
+        FB.getLoginStatus(function (response) {
+            if (response.status === 'connected') {
+                console.log('Logged in.');
                 //get accessToken
                 //accessToken = response.authResponse.accessToken;
 
@@ -52,16 +51,18 @@ $(document).ready(function () {
                 
 
             }
+            
             else {
-                console.log('User cancelled login or did not fully authorize.');
+                alert("please log in to facebook")
             }
-        });//Finsihed FB.login
+        });
+       
         
     });//Finished getScript
 
     //**********************other code*******************************//
     dosomething = function (name, pirture) {
-        alert();
+           
     }
    
 
